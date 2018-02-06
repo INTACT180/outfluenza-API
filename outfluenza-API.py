@@ -31,7 +31,7 @@ def getNClosestTweets( lat1, lon1, n):
 
 	output = []
 	ostring = u'poopman'
-	for i in range(0,20):
+	for i in range(0,n):
 		temp = heapq.heappop(h)
 		while(temp[1]['user_name'] == ostring):
 			temp = heapq.heappop(h)
